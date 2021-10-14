@@ -5,29 +5,29 @@
 class Yor < Formula
   desc "Extensible auto-tagger for your IaC files"
   homepage "https://www.yor.io"
-  version "0.1.116"
+  version "0.1.117"
   license "Apache-2.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/bridgecrewio/yor/releases/download/0.1.116/yor_0.1.116_darwin_arm64.tar.gz"
-      sha256 "4dfe346823de3a1f8f71bb819699f20bf9c2891b01dcec64191ec55c3f68eec4"
+      url "https://github.com/bridgecrewio/yor/releases/download/0.1.117/yor_0.1.117_darwin_arm64.tar.gz"
+      sha256 "c65fbd01e5d12c4e263f5e645f5476ffafc1cc147ca6c3ed42d63685deeef586"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bridgecrewio/yor/releases/download/0.1.116/yor_0.1.116_darwin_amd64.tar.gz"
-      sha256 "3e0b25687d36590f9666bbf8ba527ffcf7169c55075aeafac82ccb16ac3319d2"
+      url "https://github.com/bridgecrewio/yor/releases/download/0.1.117/yor_0.1.117_darwin_amd64.tar.gz"
+      sha256 "fe53527fc6952899738514e6576245ef93ede4913f2e6c1eddb1c9ca464a29d3"
     end
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/bridgecrewio/yor/releases/download/0.1.116/yor_0.1.116_linux_amd64.tar.gz"
-      sha256 "a1e9093a4f8eeff65d3fba1197cfbab93f10682ae1e761a9cd357ee65a664c36"
-    end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bridgecrewio/yor/releases/download/0.1.116/yor_0.1.116_linux_arm64.tar.gz"
-      sha256 "981cfb91ddd3b73ac809a0b0a1069864258a6cf668e15d4251aee5059a904105"
+      url "https://github.com/bridgecrewio/yor/releases/download/0.1.117/yor_0.1.117_linux_arm64.tar.gz"
+      sha256 "950433981acc1ed587224e5aad9b3434821a596f177560140a5fdcbb91f7bdac"
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/bridgecrewio/yor/releases/download/0.1.117/yor_0.1.117_linux_amd64.tar.gz"
+      sha256 "d8dbe08d9602617c1d71529101c7eb21611d2f598b67fe77cd455eb22609b29f"
     end
   end
 
