@@ -5,21 +5,21 @@
 class Yor < Formula
   desc "Extensible auto-tagger for your IaC files"
   homepage "https://www.yor.io"
-  version "0.1.137"
+  version "0.1.138"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/bridgecrewio/yor/releases/download/0.1.137/yor_0.1.137_darwin_arm64.tar.gz"
-      sha256 "508b2e700303cd2e4b5eed5d003a49a3c696789d31dcae1457bee41ba8abf2cb"
+      url "https://github.com/bridgecrewio/yor/releases/download/0.1.138/yor_0.1.138_darwin_arm64.tar.gz"
+      sha256 "0baed4cf8ff0972c233b88a25f4629e48623eab14d34ef5a16da7d3b3eebac96"
 
       def install
         bin.install "yor"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bridgecrewio/yor/releases/download/0.1.137/yor_0.1.137_darwin_amd64.tar.gz"
-      sha256 "caf6e2efc36a7eca37735805f353d80a5645cfc7a03e5cfdff8bb405fc8b96c8"
+      url "https://github.com/bridgecrewio/yor/releases/download/0.1.138/yor_0.1.138_darwin_amd64.tar.gz"
+      sha256 "cd30913ed96cf3175e0e43001c0d57942930c56422a96486dc7bdbf2cffc0f76"
 
       def install
         bin.install "yor"
@@ -29,16 +29,16 @@ class Yor < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bridgecrewio/yor/releases/download/0.1.137/yor_0.1.137_linux_arm64.tar.gz"
-      sha256 "103fbab895887c1ff3b6e76b923cd72b257717183ea4d839d62e1e2a29f8dec6"
+      url "https://github.com/bridgecrewio/yor/releases/download/0.1.138/yor_0.1.138_linux_arm64.tar.gz"
+      sha256 "406adfaa32d29912be25ad2885117e5da3c645e54b72d3deafbd043985884de5"
 
       def install
         bin.install "yor"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bridgecrewio/yor/releases/download/0.1.137/yor_0.1.137_linux_amd64.tar.gz"
-      sha256 "e4845757a0300b1abb56a08329beb99cf0568963d576c7665cb18f0af858b78d"
+      url "https://github.com/bridgecrewio/yor/releases/download/0.1.138/yor_0.1.138_linux_amd64.tar.gz"
+      sha256 "c33bbeaf8ecb9159c870c94f647ecb14bf673e530ebad4c7264e44d2aecde688"
 
       def install
         bin.install "yor"
