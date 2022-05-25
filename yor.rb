@@ -5,21 +5,21 @@
 class Yor < Formula
   desc "Extensible auto-tagger for your IaC files"
   homepage "https://www.yor.io"
-  version "0.1.143"
+  version "0.1.144"
   license "Apache-2.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/bridgecrewio/yor/releases/download/0.1.143/yor_0.1.143_darwin_arm64.tar.gz"
-      sha256 "622a48eaa7b778021e8ec809efe04fc925bc2d39a1acb7062fe82e9217cfddb0"
+    if Hardware::CPU.intel?
+      url "https://github.com/bridgecrewio/yor/releases/download/0.1.144/yor_0.1.144_darwin_amd64.tar.gz"
+      sha256 "348dae6e13802dcf5971ed9cd0f01c93dc2737e924b5f60ae6dece2f881d05a2"
 
       def install
         bin.install "yor"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/bridgecrewio/yor/releases/download/0.1.143/yor_0.1.143_darwin_amd64.tar.gz"
-      sha256 "056af8235399fe746fff022e99de97e6309f16ccbc12b0fe4128141c17f3f979"
+    if Hardware::CPU.arm?
+      url "https://github.com/bridgecrewio/yor/releases/download/0.1.144/yor_0.1.144_darwin_arm64.tar.gz"
+      sha256 "009c8623f96c8da5226d1e82bb48bd8b76bb7443ecf5a0b1aa45a212abbe3901"
 
       def install
         bin.install "yor"
@@ -28,17 +28,17 @@ class Yor < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bridgecrewio/yor/releases/download/0.1.143/yor_0.1.143_linux_arm64.tar.gz"
-      sha256 "90b3b8c3333d17ffa4425e97febce3cd41618b879e9594fc0c32a11763b57c0a"
+    if Hardware::CPU.intel?
+      url "https://github.com/bridgecrewio/yor/releases/download/0.1.144/yor_0.1.144_linux_amd64.tar.gz"
+      sha256 "17011df4c78a19b46c1f72b1c30727ce8cf53678121f80d1e27dd502dc56b64b"
 
       def install
         bin.install "yor"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/bridgecrewio/yor/releases/download/0.1.143/yor_0.1.143_linux_amd64.tar.gz"
-      sha256 "6a89115320a78b75ad726ac8db6b5324f7b9a5d0622ad63fa7999ec19b00cf21"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/bridgecrewio/yor/releases/download/0.1.144/yor_0.1.144_linux_arm64.tar.gz"
+      sha256 "640f58994573817449bed4ef5668d722e59e29118c40fcb19252060d127b677c"
 
       def install
         bin.install "yor"
