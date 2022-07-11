@@ -5,21 +5,21 @@
 class Yor < Formula
   desc "Extensible auto-tagger for your IaC files"
   homepage "https://www.yor.io"
-  version "0.1.148"
+  version "0.1.149"
   license "Apache-2.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/bridgecrewio/yor/releases/download/0.1.148/yor_0.1.148_darwin_amd64.tar.gz"
-      sha256 "716a334b1f72f506928ac4fcc0bdb50d52a54c8dc827d5bf4aa6a2ec21b48dff"
+    if Hardware::CPU.arm?
+      url "https://github.com/bridgecrewio/yor/releases/download/0.1.149/yor_0.1.149_darwin_arm64.tar.gz"
+      sha256 "fbb94b4bfbded0c5c24bf45cdf76497bcd2a6a624a900950811d604bf98ec450"
 
       def install
         bin.install "yor"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/bridgecrewio/yor/releases/download/0.1.148/yor_0.1.148_darwin_arm64.tar.gz"
-      sha256 "70530b8849b5d9cb922913b11112e26cf5ad4672866edddb19ce0a91be9c57bc"
+    if Hardware::CPU.intel?
+      url "https://github.com/bridgecrewio/yor/releases/download/0.1.149/yor_0.1.149_darwin_amd64.tar.gz"
+      sha256 "1d64143efdeea7a2bcfd80dad8c727e94855005f013d2a95d8f91f8848458508"
 
       def install
         bin.install "yor"
@@ -29,16 +29,16 @@ class Yor < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bridgecrewio/yor/releases/download/0.1.148/yor_0.1.148_linux_arm64.tar.gz"
-      sha256 "451c21813ff131ee4482b5da3f80a9054bbfae137a224c91d06c031cc01367dd"
+      url "https://github.com/bridgecrewio/yor/releases/download/0.1.149/yor_0.1.149_linux_arm64.tar.gz"
+      sha256 "d54956aff663b763b27fdd140f41641fb39af5e98c09e08a41e7ff402faabeeb"
 
       def install
         bin.install "yor"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bridgecrewio/yor/releases/download/0.1.148/yor_0.1.148_linux_amd64.tar.gz"
-      sha256 "5c57391008ae54fd875a15c4a271cf554979acd834c3039f7ca43b924fc944da"
+      url "https://github.com/bridgecrewio/yor/releases/download/0.1.149/yor_0.1.149_linux_amd64.tar.gz"
+      sha256 "0bd16cee5400ac4137e4ab581b2b7e881301dd90bc2aa0c4088e027987b14bba"
 
       def install
         bin.install "yor"
