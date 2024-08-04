@@ -5,21 +5,21 @@
 class Yor < Formula
   desc "Extensible auto-tagger for your IaC files"
   homepage "https://www.yor.io"
-  version "0.1.198"
+  version "0.1.199"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/bridgecrewio/yor/releases/download/0.1.198/yor_0.1.198_darwin_amd64.tar.gz"
-      sha256 "3a584520980930ad680b7352cf0e2856e20408145df5cf5d1d52605e9d60c387"
+      url "https://github.com/bridgecrewio/yor/releases/download/0.1.199/yor_0.1.199_darwin_amd64.tar.gz"
+      sha256 "3be77722b1a12528a320046647997321fc94e949b935cb89e528edf3db46cbd3"
 
       def install
         bin.install "yor"
       end
     end
     on_arm do
-      url "https://github.com/bridgecrewio/yor/releases/download/0.1.198/yor_0.1.198_darwin_arm64.tar.gz"
-      sha256 "b0c621f978238b29e2e5b00f3e281c36ace77899bfa130a6c3cd912866c8dda7"
+      url "https://github.com/bridgecrewio/yor/releases/download/0.1.199/yor_0.1.199_darwin_arm64.tar.gz"
+      sha256 "e782187562446fdf2bfceac8edb468d231d4e802834f4cb9e99b6c3bb7cf6553"
 
       def install
         bin.install "yor"
@@ -30,8 +30,8 @@ class Yor < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/bridgecrewio/yor/releases/download/0.1.198/yor_0.1.198_linux_amd64.tar.gz"
-        sha256 "6b1893e87c4a190867fb4fa982ad1f05311f5a944c711905bd13527863b0f1e2"
+        url "https://github.com/bridgecrewio/yor/releases/download/0.1.199/yor_0.1.199_linux_amd64.tar.gz"
+        sha256 "3c8660b9220a8835a55e897df239a836a4962bd390ead92e5ce3a252f4383ea0"
 
         def install
           bin.install "yor"
@@ -40,8 +40,8 @@ class Yor < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/bridgecrewio/yor/releases/download/0.1.198/yor_0.1.198_linux_arm64.tar.gz"
-        sha256 "4329d4ca56489a9a77cfaece37cf89b399dc253fe4e6ce353c4c35002ec69822"
+        url "https://github.com/bridgecrewio/yor/releases/download/0.1.199/yor_0.1.199_linux_arm64.tar.gz"
+        sha256 "8271874ffb2ed34c20e4bfe18c3c893e15e5be5c128ffe440c91c42679ea5817"
 
         def install
           bin.install "yor"
